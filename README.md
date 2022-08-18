@@ -60,7 +60,7 @@ The first step of BigGAN's forward pass is to convert the one-hot 1000-dim class
 
 The noise vector and the dense class embedding are then concatenated in a single input vector of length 256 which is used for the image generation process.
 
-We reproduce the forward pass of BigGAN from [here](https://github.com/huggingface/pytorch-pretrained-BigGAN/blob/master/pytorch_pretrained_biggan/model.py#L289) to illustrated this:
+We reproduce the forward pass of BigGAN from [here](https://github.com/mailkoliver88/pytorch-pretrained-BigGAN/blob/master/pytorch_pretrained_biggan/model.py#L289) to illustrated this:
 
 ```python
 def forward(self, noise, class_one_hot_label, truncation):
@@ -109,8 +109,8 @@ The coding exercise can be done in either `PyTorch` or `TensorFlow 2.0` (maybe a
 
 You should use as starting points:
 
-- a PyTorch or TF 2.0 version of a pretrained language model, for instance, as provided in the [Transformers library](https://github.com/huggingface/transformers), and
-- a PyTorch (TF 2.0 version is being finalized) of a pretrained BigGan model, for instance as provided in the [pretrained-biggan library](https://github.com/huggingface/pytorch-pretrained-BigGAN). You can also use the TF 1.0 version provided on tf.hub and extract the relevant variables (embeddings of the GAN).
+- a PyTorch or TF 2.0 version of a pretrained language model, for instance, as provided in the [Transformers library](https://github.com/mailkoliver88/transformers), and
+- a PyTorch (TF 2.0 version is being finalized) of a pretrained BigGan model, for instance as provided in the [pretrained-biggan library](https://github.com/mailkoliver88/pytorch-pretrained-BigGAN). You can also use the TF 1.0 version provided on tf.hub and extract the relevant variables (embeddings of the GAN).
 
 The provided utility scripts in this repo are framework agnostic, except for the `generate_image` function which uses the PyTorch implementation of BigGAN. They are very simple and mostly provided for demo/data generation (see below).
 
