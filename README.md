@@ -1,4 +1,4 @@
-# 🤗Hugging Face ML researcher/engineer code exercise - Funky multi-modal version
+# OLA ML researcher/engineer code exercise - Funky multi-modal version
 
 ## Philosophy of the exercise and disclaimer
 
@@ -169,4 +169,4 @@ Overall, please bear in mind that:
 - we don't require you to finish the exercise, sending back work-in-progress is expected, and
 - the model might not work entirely as intended in the end. This is also fine since the project itself is closer to a research project than a regular code-exercise.
 
-Good luck! 🤗🤗🤗
+Good luck!
